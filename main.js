@@ -40,7 +40,6 @@ function getteams() {
         txt += array1[x] + " ";
         countVar = parseInt(x) + 1;
         team1.push(txt + "\n");
-        console.log(txt);
     }
 
     var x, txt = "";
@@ -50,7 +49,6 @@ function getteams() {
         txt += array2[x] + " ";
         countVar = parseInt(x) + 1;
         team2.push(txt + "\n");
-        console.log(txt);
     }
     team1 = team1.join().replace(',', '');
     team2 = team2.join().replace(',', '');
@@ -60,7 +58,6 @@ function getteams() {
     team2 = team2.replace(',', '');
     team1 = team1.replace(',', '');
     team2 = team2.replace(',', '');
-    console.log(team2)
     document.getElementById("outputteams").value = team1;
     document.getElementById("outputteams2").value = team2;
 }
