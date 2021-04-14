@@ -13,7 +13,7 @@
     <meta property="og:image" content="https://imgur.com/Abdh80y.png" />
     <style>
         #background {
-            background: url(background.png);
+            background: url(numery.jpg);
             background-repeat: no-repeat;
             height: 100%;
         }
@@ -68,16 +68,17 @@
         </nav>
         <span id=" separator ">&#8203;</span>
         <center>
-            <textarea id="inputTeams" style="resize:none; background-color: rgba(38, 41, 44, 0.75); color: white; border:10px solid #1C1F21 " name="Code " rows="15 " cols="50 " placeholder="Wpisz nazwy uczestników. " spellcheck="false "></textarea>
+            <textarea id="inputNumber1" style="resize:none; background-color: rgba(38, 41, 44, 0.75); color: white; border:10px solid #1C1F21 " name="Code " rows="2 " cols="5" placeholder="Liczba 1" spellcheck="false "></textarea>
+            <textarea id="inputNumber2" style="resize:none; background-color: rgba(38, 41, 44, 0.75); color: white; border:10px solid #1C1F21 " name="Code " rows="2 " cols="5 " placeholder="Liczba 2" spellcheck="false "></textarea>
         </center>
         <span id="separator ">&#8203;&#8203;&#8203;&#8203;</span>
         <center>
-            <button type="button" class="btn btn-dark" style="border: 4px solid rgba(38, 41, 44);" onclick="getteams()">Wylosuj teamy</button>
+            <button type="button" class="btn btn-dark" style="border: 4px solid rgba(38, 41, 44);" onclick="getnumber()">Wylosuj liczbę</button>
         </center>
         <span id="separator">&#8203;&#8203;&#8203;&#8203; </span>
         <center>
-            <textarea id="outputteams" style="resize:none; background-color: rgba(38, 41, 44, 0.75); color: #990033; border:10px solid #990033 " name="Code " rows="15 " cols="50 " placeholder=" " spellcheck="false " disabled></textarea> <span id="separator">&#8203;&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>
-            <textarea id="outputteams2" style="resize:none; background-color: rgba(38, 41, 44, 0.75); color: #0099FF; border:10px solid #0099FF " name="Code " rows="15 " cols="50 " placeholder=" " spellcheck="false " disabled></textarea>
+            <textarea id="outputperson" style="text-align: center;resize:none; background-color: rgba(38, 41, 44, 0.75); color: white;border:10px solid; border-bottom: 10px solid transparent; border-image: linear-gradient(to right, red , green);
+            border-image-slice: 1;" name="Code " rows="3 " cols="20 " placeholder=" " spellcheck="false " disabled></textarea>
         </center>
 
         <script src="/main.js"></script>

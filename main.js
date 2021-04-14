@@ -20,6 +20,40 @@ function getLineNumber(textarea) {
         .reduce((a, b) => a + b, 0);
 };
 
+function getnumber() {
+    number1 = document.getElementById("inputNumber1").value;
+    number2 = document.getElementById("inputNumber2").value;
+    number1 = parseInt(number1);
+    number2 = parseInt(number2);
+    if (number1 > number2) {
+        alert("Pierwsza liczba nie może być większa od drugiej.")
+        return;
+    }
+    console.log(number1, number2);
+    randomNumber = getRndInteger(number1, number2);
+    console.log(randomNumber);
+    document.getElementById("outputperson").value = randomNumber.toString();
+}
+
+function getRndInteger(min, max) {
+    return Math.floor(Math.random() * (max - min)) + min;
+}
+
+// RANDOM PERSON
+function getperson() {
+    const teamsText = document.getElementById("inputTeams").value;
+    if (teamsText.length < 2) {
+        alert('Nieprawidłowa ilość osób.')
+        return;
+    }
+    teams = teamsText.match(/[^\r\n]+/g);;
+    shuffle(teams);
+    console.log(teams);
+    osoba = teams[1];
+    document.getElementById("outputperson").value = "\n" + osoba;
+}
+
+// GET TEAMS
 function getteams() {
     if (getLineNumber(inputTeams) > 10) {
         alert('Nieprawidłowa ilość uczestników.')
