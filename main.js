@@ -92,6 +92,7 @@ function getteams() {
     team2 = team2.replace(',', '');
     team1 = team1.replace(',', '');
     team2 = team2.replace(',', '');
+    console.log(outputteams)
     document.getElementById("outputteams").value = team1;
     document.getElementById("outputteams2").value = team2;
 }
